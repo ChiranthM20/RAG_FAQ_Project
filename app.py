@@ -1,34 +1,13 @@
 import streamlit as st
 import os
 
-from dotenv import load_dotenv
-from google import genai
-
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
-
-# =========================
-# LOAD ENV
-# =========================
-
-load_dotenv()
-
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-
-if not GEMINI_API_KEY:
-    st.error("❌ GEMINI_API_KEY not found in .env file")
-    st.stop()
-
-
-# =========================
-# GEMINI CLIENT
-# =========================
-
-client = genai.Client(api_key=GEMINI_API_KEY)
+from langchain_ollama import OllamaLLM
 
 
 # =========================
@@ -37,8 +16,8 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 
 st.set_page_config(page_title="RAG FAQ System", layout="centered")
 
-st.title("📚 FAQ System using RAG")
-st.write("Upload PDF and ask questions")
+st.title("📚 FAQ System using RAG (Offline)")
+st.write("Upload PDF and ask questions (No API, No Limits)")
 
 
 # =========================
@@ -91,8 +70,10 @@ def split_docs(docs):
 def create_db(chunks):
 
     embeddings = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2"
+    model_name="sentence-transformers/all-MiniLM-L6-v2",
+    model_kwargs={"device": "cpu"}
     )
+
 
     db = FAISS.from_documents(chunks, embeddings)
 
@@ -119,15 +100,17 @@ def load_db():
 
 
 # =========================
-# GEMINI ASK
+# ASK LLAMA (OLLAMA)
 # =========================
 
-def ask_gemini(context, question):
+def ask_llama(context, question):
+
+    llm = OllamaLLM(model="llama3")
 
     prompt = f"""
 You are a helpful assistant.
 
-Answer ONLY from the context.
+Answer ONLY from the context below.
 If not found, say: Not available in document.
 
 Context:
@@ -137,12 +120,9 @@ Question:
 {question}
 """
 
-    response = client.models.generate_content(
-        model="gemini-2.0-flash",
-        contents=prompt
-    )
+    response = llm.invoke(prompt)
 
-    return response.text
+    return response
 
 
 # =========================
@@ -181,7 +161,7 @@ if st.button("Get Answer"):
 
     else:
 
-        with st.spinner("🔍 Searching answer..."):
+        with st.spinner("🔍 Finding answer..."):
 
             db = load_db()
 
@@ -192,7 +172,7 @@ if st.button("Get Answer"):
             for d in docs:
                 context += d.page_content + "\n\n"
 
-            answer = ask_gemini(context, question)
+            answer = ask_llama(context, question)
 
         st.subheader("📌 Answer")
         st.write(answer)
