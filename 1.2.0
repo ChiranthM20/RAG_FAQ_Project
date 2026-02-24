@@ -1,0 +1,378 @@
+Collecting langchain-core
+  Using cached langchain_core-1.2.13-py3-none-any.whl.metadata (4.4 kB)
+Collecting langchain-community
+  Using cached langchain_community-0.4.1-py3-none-any.whl.metadata (3.0 kB)
+Collecting langchain
+  Using cached langchain-1.2.10-py3-none-any.whl.metadata (5.7 kB)
+Collecting jsonpatch<2.0.0,>=1.33.0 (from langchain-core)
+  Using cached jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting langsmith<1.0.0,>=0.3.45 (from langchain-core)
+  Using cached langsmith-0.7.3-py3-none-any.whl.metadata (15 kB)
+Collecting packaging>=23.2.0 (from langchain-core)
+  Using cached packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pydantic<3.0.0,>=2.7.4 (from langchain-core)
+  Using cached pydantic-2.12.5-py3-none-any.whl.metadata (90 kB)
+Collecting pyyaml<7.0.0,>=5.3.0 (from langchain-core)
+  Using cached pyyaml-6.0.3-cp311-cp311-win_amd64.whl.metadata (2.4 kB)
+Collecting tenacity!=8.4.0,<10.0.0,>=8.1.0 (from langchain-core)
+  Using cached tenacity-9.1.4-py3-none-any.whl.metadata (1.2 kB)
+Collecting typing-extensions<5.0.0,>=4.7.0 (from langchain-core)
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting uuid-utils<1.0,>=0.12.0 (from langchain-core)
+  Using cached uuid_utils-0.14.0-cp39-abi3-win_amd64.whl.metadata (5.0 kB)
+Collecting jsonpointer>=1.9 (from jsonpatch<2.0.0,>=1.33.0->langchain-core)
+  Downloading jsonpointer-3.0.0-py2.py3-none-any.whl.metadata (2.3 kB)
+Collecting httpx<1,>=0.23.0 (from langsmith<1.0.0,>=0.3.45->langchain-core)
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting orjson>=3.9.14 (from langsmith<1.0.0,>=0.3.45->langchain-core)
+  Using cached orjson-3.11.7-cp311-cp311-win_amd64.whl.metadata (43 kB)
+Collecting requests-toolbelt>=1.0.0 (from langsmith<1.0.0,>=0.3.45->langchain-core)
+  Using cached requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+Collecting requests>=2.0.0 (from langsmith<1.0.0,>=0.3.45->langchain-core)
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting xxhash>=3.0.0 (from langsmith<1.0.0,>=0.3.45->langchain-core)
+  Downloading xxhash-3.6.0-cp311-cp311-win_amd64.whl.metadata (13 kB)
+Collecting zstandard>=0.23.0 (from langsmith<1.0.0,>=0.3.45->langchain-core)
+  Downloading zstandard-0.25.0-cp311-cp311-win_amd64.whl.metadata (3.3 kB)
+Collecting anyio (from httpx<1,>=0.23.0->langsmith<1.0.0,>=0.3.45->langchain-core)
+  Downloading anyio-4.12.1-py3-none-any.whl.metadata (4.3 kB)
+Collecting certifi (from httpx<1,>=0.23.0->langsmith<1.0.0,>=0.3.45->langchain-core)
+  Downloading certifi-2026.1.4-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx<1,>=0.23.0->langsmith<1.0.0,>=0.3.45->langchain-core)
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting idna (from httpx<1,>=0.23.0->langsmith<1.0.0,>=0.3.45->langchain-core)
+  Using cached idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->langsmith<1.0.0,>=0.3.45->langchain-core)
+  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting annotated-types>=0.6.0 (from pydantic<3.0.0,>=2.7.4->langchain-core)
+  Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.41.5 (from pydantic<3.0.0,>=2.7.4->langchain-core)
+  Using cached pydantic_core-2.41.5-cp311-cp311-win_amd64.whl.metadata (7.4 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic<3.0.0,>=2.7.4->langchain-core)
+  Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting langchain-classic<2.0.0,>=1.0.0 (from langchain-community)
+  Using cached langchain_classic-1.0.1-py3-none-any.whl.metadata (4.2 kB)
+Collecting SQLAlchemy<3.0.0,>=1.4.0 (from langchain-community)
+  Using cached sqlalchemy-2.0.46-cp311-cp311-win_amd64.whl.metadata (9.8 kB)
+Collecting aiohttp<4.0.0,>=3.8.3 (from langchain-community)
+  Using cached aiohttp-3.13.3-cp311-cp311-win_amd64.whl.metadata (8.4 kB)
+Collecting dataclasses-json<0.7.0,>=0.6.7 (from langchain-community)
+  Using cached dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+Collecting pydantic-settings<3.0.0,>=2.10.1 (from langchain-community)
+  Using cached pydantic_settings-2.13.0-py3-none-any.whl.metadata (3.4 kB)
+Collecting httpx-sse<1.0.0,>=0.4.0 (from langchain-community)
+  Using cached httpx_sse-0.4.3-py3-none-any.whl.metadata (9.7 kB)
+Collecting numpy>=1.26.2 (from langchain-community)
+  Downloading numpy-2.4.2-cp311-cp311-win_amd64.whl.metadata (6.6 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community)
+  Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community)
+  Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community)
+  Downloading attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp<4.0.0,>=3.8.3->langchain-community)
+  Downloading frozenlist-1.8.0-cp311-cp311-win_amd64.whl.metadata (21 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp<4.0.0,>=3.8.3->langchain-community)
+  Using cached multidict-6.7.1-cp311-cp311-win_amd64.whl.metadata (5.5 kB)
+Collecting propcache>=0.2.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community)
+  Downloading propcache-0.4.1-cp311-cp311-win_amd64.whl.metadata (14 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community)
+  Using cached yarl-1.22.0-cp311-cp311-win_amd64.whl.metadata (77 kB)
+Collecting marshmallow<4.0.0,>=3.18.0 (from dataclasses-json<0.7.0,>=0.6.7->langchain-community)
+  Using cached marshmallow-3.26.2-py3-none-any.whl.metadata (7.3 kB)
+Collecting typing-inspect<1,>=0.4.0 (from dataclasses-json<0.7.0,>=0.6.7->langchain-community)
+  Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+Collecting langchain-text-splitters<2.0.0,>=1.1.0 (from langchain-classic<2.0.0,>=1.0.0->langchain-community)
+  Using cached langchain_text_splitters-1.1.0-py3-none-any.whl.metadata (2.7 kB)
+Collecting python-dotenv>=0.21.0 (from pydantic-settings<3.0.0,>=2.10.1->langchain-community)
+  Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.0.0->langsmith<1.0.0,>=0.3.45->langchain-core)
+  Using cached charset_normalizer-3.4.4-cp311-cp311-win_amd64.whl.metadata (38 kB)
+Collecting urllib3<3,>=1.21.1 (from requests>=2.0.0->langsmith<1.0.0,>=0.3.45->langchain-core)
+  Using cached urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting greenlet>=1 (from SQLAlchemy<3.0.0,>=1.4.0->langchain-community)
+  Downloading greenlet-3.3.1-cp311-cp311-win_amd64.whl.metadata (3.8 kB)
+Collecting mypy-extensions>=0.3.0 (from typing-inspect<1,>=0.4.0->dataclasses-json<0.7.0,>=0.6.7->langchain-community)
+  Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting langgraph<1.1.0,>=1.0.8 (from langchain)
+  Using cached langgraph-1.0.8-py3-none-any.whl.metadata (7.4 kB)
+Collecting langgraph-checkpoint<5.0.0,>=2.1.0 (from langgraph<1.1.0,>=1.0.8->langchain)
+  Using cached langgraph_checkpoint-4.0.0-py3-none-any.whl.metadata (4.9 kB)
+Collecting langgraph-prebuilt<1.1.0,>=1.0.7 (from langgraph<1.1.0,>=1.0.8->langchain)
+  Using cached langgraph_prebuilt-1.0.7-py3-none-any.whl.metadata (5.2 kB)
+Collecting langgraph-sdk<0.4.0,>=0.3.0 (from langgraph<1.1.0,>=1.0.8->langchain)
+  Using cached langgraph_sdk-0.3.6-py3-none-any.whl.metadata (1.6 kB)
+Collecting ormsgpack>=1.12.0 (from langgraph-checkpoint<5.0.0,>=2.1.0->langgraph<1.1.0,>=1.0.8->langchain)
+  Downloading ormsgpack-1.12.2-cp311-cp311-win_amd64.whl.metadata (3.3 kB)
+Using cached langchain_core-1.2.13-py3-none-any.whl (500 kB)
+Downloading jsonpatch-1.33-py2.py3-none-any.whl (12 kB)
+Downloading langsmith-0.7.3-py3-none-any.whl (325 kB)
+Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+Downloading pydantic-2.12.5-py3-none-any.whl (463 kB)
+Downloading pydantic_core-2.41.5-cp311-cp311-win_amd64.whl (2.0 MB)
+   ---------------------------------------- 2.0/2.0 MB 3.2 MB/s  0:00:00
+Downloading pyyaml-6.0.3-cp311-cp311-win_amd64.whl (158 kB)
+Downloading tenacity-9.1.4-py3-none-any.whl (28 kB)
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading uuid_utils-0.14.0-cp39-abi3-win_amd64.whl (182 kB)
+Using cached langchain_community-0.4.1-py3-none-any.whl (2.5 MB)
+Downloading aiohttp-3.13.3-cp311-cp311-win_amd64.whl (457 kB)
+Downloading dataclasses_json-0.6.7-py3-none-any.whl (28 kB)
+Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+Downloading langchain_classic-1.0.1-py3-none-any.whl (1.0 MB)
+   ---------------------------------------- 1.0/1.0 MB 2.6 MB/s  0:00:00
+Using cached langchain_text_splitters-1.1.0-py3-none-any.whl (34 kB)
+Downloading marshmallow-3.26.2-py3-none-any.whl (50 kB)
+Downloading multidict-6.7.1-cp311-cp311-win_amd64.whl (45 kB)
+Downloading pydantic_settings-2.13.0-py3-none-any.whl (58 kB)
+Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading charset_normalizer-3.4.4-cp311-cp311-win_amd64.whl (106 kB)
+Downloading idna-3.11-py3-none-any.whl (71 kB)
+Downloading sqlalchemy-2.0.46-cp311-cp311-win_amd64.whl (2.1 MB)
+   ---------------------------------------- 2.1/2.1 MB 3.9 MB/s  0:00:00
+Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+Downloading yarl-1.22.0-cp311-cp311-win_amd64.whl (86 kB)
+Using cached langchain-1.2.10-py3-none-any.whl (111 kB)
+Downloading langgraph-1.0.8-py3-none-any.whl (158 kB)
+Downloading langgraph_checkpoint-4.0.0-py3-none-any.whl (46 kB)
+Downloading langgraph_prebuilt-1.0.7-py3-none-any.whl (35 kB)
+Downloading langgraph_sdk-0.3.6-py3-none-any.whl (88 kB)
+Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading attrs-25.4.0-py3-none-any.whl (67 kB)
+Downloading certifi-2026.1.4-py3-none-any.whl (152 kB)
+Downloading frozenlist-1.8.0-cp311-cp311-win_amd64.whl (44 kB)
+Downloading greenlet-3.3.1-cp311-cp311-win_amd64.whl (226 kB)
+Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading jsonpointer-3.0.0-py2.py3-none-any.whl (7.6 kB)
+Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+Downloading numpy-2.4.2-cp311-cp311-win_amd64.whl (12.6 MB)
+   ---------------------------------------- 12.6/12.6 MB 3.5 MB/s  0:00:03
+Downloading orjson-3.11.7-cp311-cp311-win_amd64.whl (124 kB)
+Downloading ormsgpack-1.12.2-cp311-cp311-win_amd64.whl (117 kB)
+Using cached packaging-26.0-py3-none-any.whl (74 kB)
+Downloading propcache-0.4.1-cp311-cp311-win_amd64.whl (41 kB)
+Downloading python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Downloading xxhash-3.6.0-cp311-cp311-win_amd64.whl (31 kB)
+Downloading zstandard-0.25.0-cp311-cp311-win_amd64.whl (506 kB)
+Downloading anyio-4.12.1-py3-none-any.whl (113 kB)
+Installing collected packages: zstandard, xxhash, uuid-utils, urllib3, typing-extensions, tenacity, pyyaml, python-dotenv, propcache, packaging, ormsgpack, orjson, numpy, mypy-extensions, multidict, jsonpointer, idna, httpx-sse, h11, greenlet, frozenlist, charset_normalizer, certifi, attrs, annotated-types, aiohappyeyeballs, yarl, typing-inspection, typing-inspect, SQLAlchemy, requests, pydantic-core, marshmallow, jsonpatch, httpcore, anyio, aiosignal, requests-toolbelt, pydantic, httpx, dataclasses-json, aiohttp, pydantic-settings, langsmith, langgraph-sdk, langchain-core, langgraph-checkpoint, langchain-text-splitters, langgraph-prebuilt, langchain-classic, langgraph, langchain-community, langchain
+  Attempting uninstall: zstandard
+    Found existing installation: zstandard 0.25.0
+    Uninstalling zstandard-0.25.0:
+      Successfully uninstalled zstandard-0.25.0
+  Attempting uninstall: xxhash
+    Found existing installation: xxhash 3.6.0
+    Uninstalling xxhash-3.6.0:
+      Successfully uninstalled xxhash-3.6.0
+  Attempting uninstall: uuid-utils
+    Found existing installation: uuid_utils 0.14.0
+    Uninstalling uuid_utils-0.14.0:
+      Successfully uninstalled uuid_utils-0.14.0
+  Attempting uninstall: urllib3
+    Found existing installation: urllib3 2.6.3
+    Uninstalling urllib3-2.6.3:
+      Successfully uninstalled urllib3-2.6.3
+  Attempting uninstall: typing-extensions
+    Found existing installation: typing_extensions 4.15.0
+    Uninstalling typing_extensions-4.15.0:
+      Successfully uninstalled typing_extensions-4.15.0
+  Attempting uninstall: tenacity
+    Found existing installation: tenacity 9.1.4
+    Uninstalling tenacity-9.1.4:
+      Successfully uninstalled tenacity-9.1.4
+  Attempting uninstall: pyyaml
+    Found existing installation: PyYAML 6.0.3
+    Uninstalling PyYAML-6.0.3:
+      Successfully uninstalled PyYAML-6.0.3
+  Attempting uninstall: python-dotenv
+    Found existing installation: python-dotenv 1.2.1
+    Uninstalling python-dotenv-1.2.1:
+      Successfully uninstalled python-dotenv-1.2.1
+  Attempting uninstall: propcache
+    Found existing installation: propcache 0.4.1
+    Uninstalling propcache-0.4.1:
+      Successfully uninstalled propcache-0.4.1
+  Attempting uninstall: packaging
+    Found existing installation: packaging 26.0
+    Uninstalling packaging-26.0:
+      Successfully uninstalled packaging-26.0
+  Attempting uninstall: ormsgpack
+    Found existing installation: ormsgpack 1.12.2
+    Uninstalling ormsgpack-1.12.2:
+      Successfully uninstalled ormsgpack-1.12.2
+  Attempting uninstall: orjson
+    Found existing installation: orjson 3.11.7
+    Uninstalling orjson-3.11.7:
+      Successfully uninstalled orjson-3.11.7
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.26.4
+    Uninstalling numpy-1.26.4:
+      Successfully uninstalled numpy-1.26.4
+  Attempting uninstall: mypy-extensions
+    Found existing installation: mypy_extensions 1.1.0
+    Uninstalling mypy_extensions-1.1.0:
+      Successfully uninstalled mypy_extensions-1.1.0
+  Attempting uninstall: multidict
+    Found existing installation: multidict 6.7.1
+    Uninstalling multidict-6.7.1:
+      Successfully uninstalled multidict-6.7.1
+  Attempting uninstall: jsonpointer
+    Found existing installation: jsonpointer 3.0.0
+    Uninstalling jsonpointer-3.0.0:
+      Successfully uninstalled jsonpointer-3.0.0
+  Attempting uninstall: idna
+    Found existing installation: idna 3.11
+    Uninstalling idna-3.11:
+      Successfully uninstalled idna-3.11
+  Attempting uninstall: httpx-sse
+    Found existing installation: httpx-sse 0.4.3
+    Uninstalling httpx-sse-0.4.3:
+      Successfully uninstalled httpx-sse-0.4.3
+  Attempting uninstall: h11
+    Found existing installation: h11 0.16.0
+    Uninstalling h11-0.16.0:
+      Successfully uninstalled h11-0.16.0
+  Attempting uninstall: greenlet
+    Found existing installation: greenlet 3.3.1
+    Uninstalling greenlet-3.3.1:
+      Successfully uninstalled greenlet-3.3.1
+  Attempting uninstall: frozenlist
+    Found existing installation: frozenlist 1.8.0
+    Uninstalling frozenlist-1.8.0:
+      Successfully uninstalled frozenlist-1.8.0
+  Attempting uninstall: charset_normalizer
+    Found existing installation: charset-normalizer 3.4.4
+    Uninstalling charset-normalizer-3.4.4:
+      Successfully uninstalled charset-normalizer-3.4.4
+  Attempting uninstall: certifi
+    Found existing installation: certifi 2026.1.4
+    Uninstalling certifi-2026.1.4:
+      Successfully uninstalled certifi-2026.1.4
+  Attempting uninstall: attrs
+    Found existing installation: attrs 25.4.0
+    Uninstalling attrs-25.4.0:
+      Successfully uninstalled attrs-25.4.0
+  Attempting uninstall: annotated-types
+    Found existing installation: annotated-types 0.7.0
+    Uninstalling annotated-types-0.7.0:
+      Successfully uninstalled annotated-types-0.7.0
+  Attempting uninstall: aiohappyeyeballs
+    Found existing installation: aiohappyeyeballs 2.6.1
+    Uninstalling aiohappyeyeballs-2.6.1:
+      Successfully uninstalled aiohappyeyeballs-2.6.1
+  Attempting uninstall: yarl
+    Found existing installation: yarl 1.22.0
+    Uninstalling yarl-1.22.0:
+      Successfully uninstalled yarl-1.22.0
+  Attempting uninstall: typing-inspection
+    Found existing installation: typing-inspection 0.4.2
+    Uninstalling typing-inspection-0.4.2:
+      Successfully uninstalled typing-inspection-0.4.2
+  Attempting uninstall: typing-inspect
+    Found existing installation: typing-inspect 0.9.0
+    Uninstalling typing-inspect-0.9.0:
+      Successfully uninstalled typing-inspect-0.9.0
+  Attempting uninstall: SQLAlchemy
+    Found existing installation: SQLAlchemy 2.0.46
+    Uninstalling SQLAlchemy-2.0.46:
+      Successfully uninstalled SQLAlchemy-2.0.46
+  Attempting uninstall: requests
+    Found existing installation: requests 2.32.5
+    Uninstalling requests-2.32.5:
+      Successfully uninstalled requests-2.32.5
+  Attempting uninstall: pydantic-core
+    Found existing installation: pydantic_core 2.41.5
+    Uninstalling pydantic_core-2.41.5:
+      Successfully uninstalled pydantic_core-2.41.5
+  Attempting uninstall: marshmallow
+    Found existing installation: marshmallow 3.26.2
+    Uninstalling marshmallow-3.26.2:
+      Successfully uninstalled marshmallow-3.26.2
+  Attempting uninstall: jsonpatch
+    Found existing installation: jsonpatch 1.33
+    Uninstalling jsonpatch-1.33:
+      Successfully uninstalled jsonpatch-1.33
+  Attempting uninstall: httpcore
+    Found existing installation: httpcore 1.0.9
+    Uninstalling httpcore-1.0.9:
+      Successfully uninstalled httpcore-1.0.9
+  Attempting uninstall: anyio
+    Found existing installation: anyio 4.12.1
+    Uninstalling anyio-4.12.1:
+      Successfully uninstalled anyio-4.12.1
+  Attempting uninstall: aiosignal
+    Found existing installation: aiosignal 1.4.0
+    Uninstalling aiosignal-1.4.0:
+      Successfully uninstalled aiosignal-1.4.0
+  Attempting uninstall: requests-toolbelt
+    Found existing installation: requests-toolbelt 1.0.0
+    Uninstalling requests-toolbelt-1.0.0:
+      Successfully uninstalled requests-toolbelt-1.0.0
+  Attempting uninstall: pydantic
+    Found existing installation: pydantic 2.12.5
+    Uninstalling pydantic-2.12.5:
+      Successfully uninstalled pydantic-2.12.5
+  Attempting uninstall: httpx
+    Found existing installation: httpx 0.28.1
+    Uninstalling httpx-0.28.1:
+      Successfully uninstalled httpx-0.28.1
+  Attempting uninstall: dataclasses-json
+    Found existing installation: dataclasses-json 0.6.7
+    Uninstalling dataclasses-json-0.6.7:
+      Successfully uninstalled dataclasses-json-0.6.7
+  Attempting uninstall: aiohttp
+    Found existing installation: aiohttp 3.13.3
+    Uninstalling aiohttp-3.13.3:
+      Successfully uninstalled aiohttp-3.13.3
+  Attempting uninstall: pydantic-settings
+    Found existing installation: pydantic-settings 2.12.0
+    Uninstalling pydantic-settings-2.12.0:
+      Successfully uninstalled pydantic-settings-2.12.0
+  Attempting uninstall: langsmith
+    Found existing installation: langsmith 0.7.3
+    Uninstalling langsmith-0.7.3:
+      Successfully uninstalled langsmith-0.7.3
+  Attempting uninstall: langgraph-sdk
+    Found existing installation: langgraph-sdk 0.3.5
+    Uninstalling langgraph-sdk-0.3.5:
+      Successfully uninstalled langgraph-sdk-0.3.5
+  Attempting uninstall: langchain-core
+    Found existing installation: langchain-core 1.2.13
+    Uninstalling langchain-core-1.2.13:
+      Successfully uninstalled langchain-core-1.2.13
+  Attempting uninstall: langgraph-checkpoint
+    Found existing installation: langgraph-checkpoint 4.0.0
+    Uninstalling langgraph-checkpoint-4.0.0:
+      Successfully uninstalled langgraph-checkpoint-4.0.0
+  Attempting uninstall: langchain-text-splitters
+    Found existing installation: langchain-text-splitters 1.1.0
+    Uninstalling langchain-text-splitters-1.1.0:
+      Successfully uninstalled langchain-text-splitters-1.1.0
+  Attempting uninstall: langgraph-prebuilt
+    Found existing installation: langgraph-prebuilt 1.0.7
+    Uninstalling langgraph-prebuilt-1.0.7:
+      Successfully uninstalled langgraph-prebuilt-1.0.7
+  Attempting uninstall: langchain-classic
+    Found existing installation: langchain-classic 1.0.1
+    Uninstalling langchain-classic-1.0.1:
+      Successfully uninstalled langchain-classic-1.0.1
+  Attempting uninstall: langgraph
+    Found existing installation: langgraph 1.0.8
+    Uninstalling langgraph-1.0.8:
+      Successfully uninstalled langgraph-1.0.8
+  Attempting uninstall: langchain-community
+    Found existing installation: langchain-community 0.4.1
+    Uninstalling langchain-community-0.4.1:
+      Successfully uninstalled langchain-community-0.4.1
+  Attempting uninstall: langchain
+    Found existing installation: langchain 1.2.10
+    Uninstalling langchain-1.2.10:
+      Successfully uninstalled langchain-1.2.10
+
+Successfully installed SQLAlchemy-2.0.46 aiohappyeyeballs-2.6.1 aiohttp-3.13.3 aiosignal-1.4.0 annotated-types-0.7.0 anyio-4.12.1 attrs-25.4.0 certifi-2026.1.4 charset_normalizer-3.4.4 dataclasses-json-0.6.7 frozenlist-1.8.0 greenlet-3.3.1 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 httpx-sse-0.4.3 idna-3.11 jsonpatch-1.33 jsonpointer-3.0.0 langchain-1.2.10 langchain-classic-1.0.1 langchain-community-0.4.1 langchain-core-1.2.13 langchain-text-splitters-1.1.0 langgraph-1.0.8 langgraph-checkpoint-4.0.0 langgraph-prebuilt-1.0.7 langgraph-sdk-0.3.6 langsmith-0.7.3 marshmallow-3.26.2 multidict-6.7.1 mypy-extensions-1.1.0 numpy-2.4.2 orjson-3.11.7 ormsgpack-1.12.2 packaging-26.0 propcache-0.4.1 pydantic-2.12.5 pydantic-core-2.41.5 pydantic-settings-2.13.0 python-dotenv-1.2.1 pyyaml-6.0.3 requests-2.32.5 requests-toolbelt-1.0.0 tenacity-9.1.4 typing-extensions-4.15.0 typing-inspect-0.9.0 typing-inspection-0.4.2 urllib3-2.6.3 uuid-utils-0.14.0 xxhash-3.6.0 yarl-1.22.0 zstandard-0.25.0
